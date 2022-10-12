@@ -1,0 +1,12 @@
+.card__container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card__container > * {
+	margin: 2.5rem;
+}
+
+.display__item {
+	display: block;
+}

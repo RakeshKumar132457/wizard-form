@@ -1,0 +1,32 @@
+.form {
+	padding: 2rem 1rem;
+}
+.form > div {
+	padding: 1rem 2rem;
+	display: grid;
+	grid-template-columns: [start] 5rem [first] 2rem [second] 20rem [end];
+}
+
+.form > div label {
+	grid-column-start: start;
+	grid-column-end: first;
+}
+.form > div input {
+	grid-column-start: second;
+	grid-column-end: end;
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #aaa;
+	font-family: "Roboto", sans-serif;
+}
+
+.form > div input:focus {
+	outline: none;
+	border-bottom: 1px solid #111;
+}
+
+.btn__submit {
+	padding: 1rem 1rem;
+	grid-column-start: start;
+	grid-column-end: end;
+}

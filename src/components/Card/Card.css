@@ -1,0 +1,72 @@
+.card {
+	display: grid;
+	grid-template-columns: [first] 10rem [second] 10rem[third] 2rem[end];
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+		rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	max-width: max-content;
+}
+
+.card__name,
+.card__email,
+.card__phone,
+.card__address {
+	grid-column-start: first;
+	grid-column-end: end;
+	padding: 1rem;
+	justify-self: center;
+}
+
+.card__hidden {
+	display: none;
+	grid-column-start: first;
+	grid-column-end: end;
+	justify-self: center;
+}
+
+.card__display {
+	grid-column-start: first;
+	grid-column-end: end;
+	justify-self: center;
+}
+
+.card__name {
+	font-size: 2rem;
+	text-decoration: underline;
+}
+
+.card__email,
+.card__phone,
+.card__address {
+	font-size: 1.2rem;
+	color: #888;
+}
+
+.card__email {
+	font-style: italic;
+}
+
+.card__phone::before {
+	content: "+91-";
+}
+
+.btn {
+	border: 0;
+	background-color: #aaa;
+	font-family: "Roboto", sans-serif;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px 0px;
+}
+
+.btn__delete {
+	grid-column-start: third;
+	grid-column-end: end;
+	padding: 0.5rem;
+	border-radius: 100%;
+}
+.btn__show {
+	padding: 1rem 2rem;
+	grid-column-start: first;
+	grid-column-end: end;
+}
